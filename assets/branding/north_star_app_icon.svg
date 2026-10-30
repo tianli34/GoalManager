@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1429"/>
+      <stop offset="0.55" stop-color="#112544"/>
+      <stop offset="1" stop-color="#091629"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="43%" r="58%">
+      <stop offset="0" stop-color="#2E6B83" stop-opacity="0.34"/>
+      <stop offset="0.58" stop-color="#1B4664" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#10213B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="star" x1="0.2" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#E7F8FF"/>
+      <stop offset="1" stop-color="#9FE8F0"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5CCDD5" stop-opacity="0.24"/>
+      <stop offset="0.46" stop-color="#77E2E2" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#8CCEFF" stop-opacity="0.36"/>
+    </linearGradient>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="24" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#halo)"/>
+  <circle cx="512" cy="500" r="365" fill="none" stroke="#9FC9E6" stroke-opacity="0.075" stroke-width="3"/>
+  <circle cx="512" cy="500" r="314" fill="none" stroke="#9FC9E6" stroke-opacity="0.055" stroke-width="2"/>
+  <path d="M512 118 V188 M512 812 V882 M130 500 H200 M824 500 H894" stroke="#A9D8EB" stroke-opacity="0.12" stroke-width="4" stroke-linecap="round"/>
+  <path d="M302 705 A300 300 0 1 1 739 302" fill="none" stroke="url(#orbit)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M302 705 Q377 624 452 558" fill="none" stroke="#69D7D9" stroke-opacity="0.58" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="302" cy="705" r="13" fill="#76E1DE" filter="url(#smallGlow)"/>
+  <circle cx="739" cy="302" r="8" fill="#9CDCF4" opacity="0.72"/>
+  <circle cx="512" cy="476" r="185" fill="#62D6DE" opacity="0.10" filter="url(#softGlow)"/>
+  <path d="M512 264 L552 438 L682 347 L591 477 L764 518 L591 558 L682 688 L552 597 L512 770 L472 597 L342 688 L433 558 L260 518 L433 477 L342 347 L472 438 Z" fill="url(#star)"/>
+  <circle cx="512" cy="518" r="17" fill="#7EDDE2" opacity="0.96"/>
+  <circle cx="512" cy="518" r="6" fill="#FFFFFF"/>
+</svg>
