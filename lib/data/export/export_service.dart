@@ -77,7 +77,7 @@ class ExportService {
   String toMarkdown() {
     final StringBuffer sb = StringBuffer();
     final DateTime now = DateTime.now();
-    sb.writeln('# GoalManager 备份');
+    sb.writeln('# 北极星 备份');
     sb.writeln();
     sb.writeln('- 导出时间：${fmtDateTime(now)}');
     sb.writeln('- 数据结构版本：${data.schemaVersion}');

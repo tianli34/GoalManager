@@ -105,7 +105,7 @@ void main() {
       final ProgressEngine progress = ProgressEngine(data: data);
       final String md = ExportService(data: data, progress: progress).toMarkdown();
 
-      expect(md, contains('# GoalManager 备份'));
+      expect(md, contains('# 北极星 备份'));
       expect(md, contains('今年读完 24 本书'));
       expect(md, contains('累积型'));
       expect(md, contains('原始量'));

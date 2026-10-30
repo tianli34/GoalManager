@@ -19,7 +19,7 @@ class GoalManagerApp extends StatelessWidget {
     return AppStateScope(
       state: state,
       child: MaterialApp(
-        title: '目标管理',
+        title: '北极星',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),

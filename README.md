@@ -1,4 +1,4 @@
-# GoalManager — 首版 MVP
+# 北极星 — 首版 MVP
 
 一个**本地优先**的目标管理应用（Flutter，手机端形态）。
 
