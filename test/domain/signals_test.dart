@@ -11,13 +11,14 @@ import '../helpers.dart';
 SignalEngine signalEngineFor(
   List<Goal> goals,
   List<UpdateRecord> records, {
-  DateTime at = now,
+  DateTime? at,
 }) {
+  final DateTime t = at ?? now;
   final AppData data = dataWith(goals, records);
   return SignalEngine(
     data: data,
-    progress: ProgressEngine(data: data, now: at),
-    now: at,
+    progress: ProgressEngine(data: data, now: t),
+    now: t,
   );
 }
 

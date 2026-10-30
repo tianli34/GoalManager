@@ -40,6 +40,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('回顾')),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: 'review-fab',
         onPressed: () => _openReviewDialog(context, window),
         icon: const Icon(Icons.edit_note),
         label: const Text('写复盘'),

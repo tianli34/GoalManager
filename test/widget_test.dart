@@ -14,10 +14,19 @@ Future<AppState> _boot() async {
   return state;
 }
 
+/// 默认测试视口只有 800×600，懒加载的 ListView 下半部分不会被构建，
+/// 这里用接近桌面端的窗口尺寸，保证整屏内容都在。
+void _useLargeSurface(WidgetTester tester) {
+  tester.view.physicalSize = const Size(1200, 2400);
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+}
+
 /// IndexedStack 会把四个页面都建出来，
 /// 所以查找时要限定在某个页面 / 某个容器里，否则会命中多个。
 void main() {
   testWidgets('首屏渲染「当下」：承诺 / 重点目标 / 需要关注', (WidgetTester tester) async {
+    _useLargeSurface(tester);
     final AppState state = await _boot();
     await tester.pumpWidget(GoalManagerApp(state: state));
     await tester.pumpAndSettle();
@@ -29,6 +38,7 @@ void main() {
   });
 
   testWidgets('切到「目标」页并进入详情', (WidgetTester tester) async {
+    _useLargeSurface(tester);
     final AppState state = await _boot();
     await tester.pumpWidget(GoalManagerApp(state: state));
     await tester.pumpAndSettle();

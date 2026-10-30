@@ -33,6 +33,7 @@ Goal goal(
   int stableWindow = 3,
   String unit = '',
   ExecutionMode executionMode = ExecutionMode.parallel,
+  ChildStatusOverride statusOverride = ChildStatusOverride.none,
 }) =>
     Goal.create(
       id: id,
@@ -51,7 +52,7 @@ Goal goal(
       stableWindow: stableWindow,
       unit: unit,
       executionMode: executionMode,
-    )..statusOverride = statusOverrideForTest;
+    )..statusOverride = statusOverride;
 
 UpdateRecord rec(
   String goalId, {

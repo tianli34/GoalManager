@@ -23,6 +23,8 @@ ThemeData buildTheme(Brightness brightness) {
       border: OutlineInputBorder(),
       isDense: true,
     ),
-    snackBarBehavior: SnackBarBehavior.floating,
+    snackBarTheme: const SnackBarThemeData(
+      behavior: SnackBarBehavior.floating,
+    ),
   );
 }

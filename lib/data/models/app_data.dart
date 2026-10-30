@@ -1,4 +1,5 @@
 import 'commitment.dart';
+import 'enums.dart';
 import 'goal.dart';
 import 'inbox_item.dart';
 import 'json_helpers.dart';

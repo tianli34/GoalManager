@@ -4,6 +4,7 @@ import '../../core/date_utils.dart';
 import '../../domain/progress.dart';
 import '../models/app_data.dart';
 import '../models/commitment.dart';
+import '../models/enums.dart';
 import '../models/goal.dart';
 import '../models/inbox_item.dart';
 import '../models/review.dart';

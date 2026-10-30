@@ -16,6 +16,7 @@ import '../data/storage/app_repository.dart';
 import '../domain/commitments.dart';
 import '../domain/milestone.dart';
 import '../domain/progress.dart';
+import '../domain/signals.dart';
 import 'seed_data.dart';
 
 /// 应用状态：持有整份数据，所有写操作都经过这里，

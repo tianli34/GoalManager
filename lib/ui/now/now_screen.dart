@@ -50,6 +50,7 @@ class NowScreen extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: 'now-fab',
         onPressed: () => showCaptureSheet(context),
         icon: const Icon(Icons.add),
         label: const Text('捕获 / 更新'),

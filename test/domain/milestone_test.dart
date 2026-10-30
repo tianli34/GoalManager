@@ -69,7 +69,7 @@ void main() {
         parentGoalId: 'p',
         sortOrder: 200,
         lifecycle: Lifecycle.active,
-        statusOverrideForTest: ChildStatusOverride.forceActive,
+        statusOverride: ChildStatusOverride.forceActive,
       );
 
       final views = engineFor(<Goal>[parent, a, b]).childrenOf('p');
@@ -118,7 +118,7 @@ void main() {
         startValue: 80,
         currentValue: 70,
         targetValue: 70,
-        statusOverrideForTest: ChildStatusOverride.frozen,
+        statusOverride: ChildStatusOverride.frozen,
       );
       final b = goal('b', parentGoalId: 'p', sortOrder: 200, lifecycle: Lifecycle.active);
 

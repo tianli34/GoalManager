@@ -190,8 +190,6 @@ class _PendingRow extends StatelessWidget {
     final Goal goal = state.convertInboxItemToGoal(
       item.id,
       mechanism: mechanism,
-      startValue: mechanism == Mechanism.cumulative ? 0 : null,
-      currentValue: mechanism == Mechanism.cumulative ? 0 : null,
     );
     if (!context.mounted) return;
     showMessage(context, '已转为目标，去补全达成条件吧');

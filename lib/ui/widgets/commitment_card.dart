@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/date_utils.dart';
+import '../../data/models/commitment.dart';
 import '../../data/models/enums.dart';
 import '../../domain/commitments.dart';
 import '../../state/app_state.dart';

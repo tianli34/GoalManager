@@ -60,6 +60,7 @@ class _GoalsScreenState extends State<GoalsScreen> {
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
+          heroTag: 'goals-fab',
           onPressed: () =>
               Navigator.of(context).pushNamed<void>('/goal-editor'),
           icon: const Icon(Icons.add),
